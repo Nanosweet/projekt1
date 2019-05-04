@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+    </head>
+    <body>
+        {% block body %}
+        {{ form(form) }}
+            <h1>Render the post tha i got</h1>
+            {{ post.title }}
+            {{ post.description }}
+        {% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
